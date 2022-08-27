@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS in Vanilla HTML!</title>
-    <link rel="stylesheet" href="tailwind.css" />
-  </head>
-  <body>
-    <div class="flex min-h-screen flex-col items-center justify-center py-2">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BotShop</title>
+        <link rel="stylesheet" href="tailwind.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    </head>
 
-        <main class="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-  
-          <h1 class="text-6xl font-bold">
-            Welcome to
-            <a class="text-blue-600">
-              Bot Shop !
-            </a>
-          </h1>
-  
-          <p class="mt-3 text-2xl">
-            Need a Telegram bot for your community? Fill out this form:
-         
-          </p>
-            <div class="bg-red">
-                <form action="https://formsubmit.co/botshop@mailbox.org" method="POST">
-                    <input class="" type="text" name="name" required>
-                    <input type="email" name="email" required>
-                    <button type="submit">Send</button>
-               </form>
+    <body>
+        <div class="flex flex-col items-center min-h-screen bg-gray-400 font-sans">
+
+
+            <div class="w-full h-20 bg-orange-300">
+                test
             </div>
-          <div class="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-  
-            <p class="hidden">“Attention bot shoppers! Take advantage of our penny bot sale! If you buy one piece of bot at the regular price, you get another piece of bot of equal or lesser value for only a penny! Try and beat bot for a penny! If you can find cheaper bot anywhere else, fuck it!</p>
-  
-          </div>
-        </main>
-  
-        <footer class="flex h-24 w-full items-center justify-center border-t">
-        © Underpants Gnomes Inc.
-        </footer>
-      </div>
-  </body>
+
+
+            <div class="w-full  text-center pt-8 pb-8">
+                <h1 class="font-silk text-6xl">Welcome to BotShop!</h1>
+                <!--<h2 class="text-3xl">Custom Telegram Bots for your community !</h2>-->
+            </div>
+
+            
+            <div class="w-full bg-stone-500">
+                <form class="" action="https://formsubmit.co/botshop@mailbox.org" method="POST" id="projectform">
+                    <div class="flex justify-center"><input class="w-5/6 h-16 rounded pl-4 mt-8" type="text" name="name" placeholder="name" required></div>
+                    <div class="flex justify-center"><input class="w-5/6 h-16 rounded pl-4 mt-4" type="email" name="email" placeholder="email" required></div>
+                    <div class="flex justify-center"><textarea class="w-5/6 h-60 rounded resize-y pl-4 mt-4" name="project-description" placeholder="Describe your project !" required></textarea></div>
+                    <div class="flex justify-center"><button class="w-5/6 h-16 rounded bg-slate-900 text-slate-100 text-xl mt-8 mb-8" type="submit">Send your message !</button></div>
+                </form>
+            </div>
+            
+
+        </div>
+    </body>
 </html>
+
+<!-- 
+
+
+-->
