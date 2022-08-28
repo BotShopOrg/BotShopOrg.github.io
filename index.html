@@ -21,11 +21,11 @@
     </head>
 
     <body>
-        <div class="flex flex-col font-jost items-center min-h-screen bg-zinc-200 font-sans">
+        <div class="flex flex-col font-jost items-center h-full bg-zinc-200 font-sans">
 
 
             <div class="flex flex-col items-center w-full text-center pt-20 pb-20">
-                <h1 class="font-silk text-6xl md:w-4/6 md:text-8xl lg:text-8xl">
+                <h1 class="font-silk text-6xl md:w-4/6 md:text-8xl lg:w-2/6 lg:text-8xl">
                     Welcome to BotShop!
                 </h1>
                 <!--<h2 class="text-3xl">Custom Telegram Bots for your community !</h2>-->
@@ -33,9 +33,9 @@
 
             
 
-            <div class="flex flex-col justify-center items-center w-full md:h-80 font-jost text-center text-slate-50 pt-16 pb-16 bg-indigo-700">
-                    <h2 class="w-5/6 md:w-4/6 text-4xl md:text-5xl">
-                        Bots for Telegram and Discord - 
+            <div class="flex flex-col justify-center items-center w-full md:h-80 font-jost text-center text-slate-50 pt-16 pb-16 lg:pt-32 lg:pb-32 bg-orange-400">
+                    <h2 class="w-5/6 md:w-4/6 lg:w-3/6 text-4xl md:text-5xl lg:text-6xl">
+                        Bots for Telegram and Discord<br>- 
                         made in Germany and made to measure !
                     </h2>
                 <!--<h2 class="text-3xl">Custom Telegram Bots for your community !</h2>-->
@@ -43,11 +43,11 @@
             
 
 
-            <div class="flex flex-col items-center w-full font-jost text-center pt-14 pb-14 bg-white">
-                <h2 class="w-5/6 text-4xl md:text-5xl">
+            <div class="flex flex-col items-center w-full font-jost text-center pt-14 pb-14 lg:pt-24 lg:pb-24 bg-slate-50">
+                <h2 class="w-5/6 text-4xl md:text-5xl lg:text-6xl">
                     Our Promise:
                 </h2>
-                <ul class="list-disc list-inside font-ptsans text-xl md:text-2xl pt-2">
+                <ul class="list-disc list-inside font-ptsans text-xl md:text-2xl lg:text-3xl pt-2">
                     <li class="">fair and flexible pricing</li>
                     <li class="pt-2">high quality</li>
                     <li class="pt-2">short waiting times</li>
@@ -58,24 +58,33 @@
 
 
             <div class="flex flex-col items-center w-full mb-16">
-                <div class="w-5/6 md:w-4/6 pt-14 pb-14">
-                    <h2 class="text-4xl md:text-5xl">Tell us about your idea!</h2>
-                    <p class="font-ptsans text-xl md:text-2xl pt-2">
-                        Try to give a precise description. 
-                        Not too short and not too long.
-                        We will get back to you after 3 working 
-                        days at the latest.
-                        Watch your mailbox!
+
+                <div class="w-5/6 md:w-4/6 lg:w-2/6 pt-14 pb-14 lg:pt-24 lg:pb-20">
+
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl">
+                        Tell us about your idea!
+                    </h2>
+
+                    <p class="font-ptsans text-xl md:text-2xl pt-2 lg:pt-6">
+                        Please tell us about your idea. 
+                        Keep your description as precise as possible and only as long as necessary. 
+                        We will reply to every enquiry after three working days at the latest 
+                        in order to discuss the further procedure with you. 
                     </p>
+
                 </div>
 
-                <form class="w-5/6 md:w-4/6 font-ptsans" action="https://formsubmit.co/botshop@mailbox.org" method="POST" id="projectform">
+                <form class="w-5/6 md:w-4/6 lg:w-2/6 font-ptsans" action="https://formsubmit.co/botshop@mailbox.org" method="POST" id="projectform">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    
                     <div class="flex w-full justify-center">
-                        <input class="w-full h-16 text-xl rounded p-4" type="text" name="name" placeholder="name" required>
+                        <input class="w-full h-14 text-xl rounded p-4" type="text" name="name" placeholder="name" required>
                     </div>
 
                     <div class="flex justify-center">
-                        <input class="w-full h-16 text-xl rounded p-4 mt-4" type="email" name="email" placeholder="email" required>
+                        <input class="w-full h-14 text-xl rounded p-4 mt-4" type="email" name="email" placeholder="email" required>
                     </div>
 
                     <div class="flex justify-center">
@@ -83,7 +92,7 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <button class="w-full h-16 rounded bg-slate-900 text-slate-100 text-xl font-bold mt-8" type="submit">
+                        <button class="w-full h-14 rounded bg-slate-900 text-slate-100 text-xl font-bold mt-8" type="submit">
                         Send your message !
                         </button>
                     </div>
