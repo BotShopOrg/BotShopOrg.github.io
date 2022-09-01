@@ -575,8 +575,8 @@ video {
   height: 100%;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-12 {
+  height: 3rem;
 }
 
 .h-60 {
@@ -667,12 +667,12 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pt-4 {
@@ -719,9 +719,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm {
